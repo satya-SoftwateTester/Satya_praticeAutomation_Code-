@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Positive login credential">
+<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+<parameter name="nm" value="Admin"></parameter>
+<parameter name="pwd1" value="admin123"></parameter>
+  <test  name="valid credential">
+    <classes>
+      <class name="pratice.positive_testcase">
+      <methods>
+      <include name="lunch"></include>
+      <include name="valid_credential"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
